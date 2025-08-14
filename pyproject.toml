@@ -1,0 +1,17 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[project]
+name = "mygeopy"
+version = "0.0.1"
+description = "Geometric computations library."
+authors = [{name = "ID", email = "id@ak.edu" }]
+license = "MIT"
+license-files = ["LICENSE.txt"]
+
+[project.optional-dependencies]
+tests = ["pytest"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
